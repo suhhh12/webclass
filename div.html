@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>
+		My First Upload
+	</title>
+<style>
+div.pagebox {
+    width: 98%;
+    border: 0px solid purple;
+}
+
+header, footer {
+    padding: 0em;
+    background-color: pink;
+    color: blue;
+    text-align: center;
+	border: 5px solid purple;
+}
+
+nav {
+	float: top;
+	padding: 0em; 
+}
+
+.fade{
+-webkit-animation-name-:fade;
+-webkit-animation-duration:1s;
+animation-name:fade;
+animation-duration:1s;
+}
+@-webkit-keyframes fade
+{from {opacity:0.1}
+  to {opacity:1}
+}
+@keyframes fade{
+from {opacity:0.1}
+to {opacity: 1}
+}
+
+.box {
+    width: 16.6%;
+	height:160px;	
+    position: relative;
+	float:left;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.pop {
+  position: absolute;
+  border: 10px solid black;
+  transition: 0.5s ease-in;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.box:hover .pop {
+  opacity: 1;
+}
+
+.text {
+  background-color: Fuchsia;
+  color: yellow;
+  text-align:center;
+  font-size: 18px;
+}
+
+
+</style>	
+</head>
+
+<body>
+<div class="pagebox"> 
+
+<header><h1>.2017. &emsp; Happy Mothers Day!&emsp;Love You Mom! &emsp; .2017.</h1></header>
+
+<nav>  
+<div class="box">
+  <img src="images\m6.jpg" alt="Avatar" class="image" style="width:100%;">
+  <div class="pop">
+    <div class="text">I remember when we went to San Diego Zoo.
+	It was very fun!</div>
+  </div>
+</div>
+<div class="box">
+  <img src="images\m8.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="pop">
+    <div class="text">Banana Man!!!</div>
+  </div>
+</div>
+<div class="box">
+  <img src="images\m0.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="pop">
+    <div class="text">Sponge Bob!!!</div>
+  </div>
+</div>
+<div class="box">
+  <img src="images\m1.jpg" alt="Avatar" class="image" style="width:100%;">
+  <div class="pop">
+    <div class="text">Pizza Man!!!</div>
+  </div>
+</div>
+<div class="box">
+  <img src="images\w5.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="pop">
+    <div class="text">Banana Man!!!</div>
+  </div>
+</div>
+<div class="box">
+  <br>
+  <video autoplay controls loop width=100%>
+  <source src="images\mom.mov">
+ </div>
+</nav>
+
+<br><br><br>
+<div class="SL fade" style="text-align:center;">
+<br><br><br><br>
+<h3><br>This is my Mom.She is one of the most important and unique person I know.
+She's also one of the most funniest and AWESOMENESS person EVER! </h3>
+<img src="images\m3.jpg" width=800px height=350px>
+<h2></h2>
+</div>
+
+<div class="SL fade" style="text-align:center;">
+<h1>All About My Mom</h1>
+<img src="images\n4.jpg"
+width=800px height=350px>
+<h2>This's her favorite forest</h2>
+</div>
+
+<div class="SL fade" style="text-align:center;">
+<h1>All About My Mom</h1>
+<img src="images\n2.jpg"
+width=800px height=350px>
+<h2>This's her favorite picture </h2>
+</div>
+
+<div class="SL fade" style="text-align:center;">
+<h1>All About My Mom</h1>
+<img src="images\n10.jpg"
+width=800px height=350px>
+<h2>This's her favorite waterfall</h2>
+</div>
+
+
+<article>
+<h1>All about me and my family</h1>
+<p>My Name is Keqi yang, I love my family and my friends.</p>
+<p>I love drawing  and swiming and also like to go to school.</p>
+</article>
+
+<footer>The Adventures of Keqi  </footer>
+</div>
+
+<script>
+var slideIndex= 0;
+function showSlides()  {
+var i;
+var slides = document.getElementsByClassName("SL");
+for (i = 0; i <slides.length; i++) {
+    slides[i].style.display = "none"
+}
+slideIndex++;
+if (slideIndex>=slides.length)
+   {slideIndex = 0}
+slides[slideIndex].style.display = "block";
+setTimeout(showSlides, 8000);
+}
+slideIndex--;
+showSlides(); 
+</script>
+
+</body>
+
+</html>
+<!--
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+
+<body>
+<p>Add Space</p>
+<p>Add         Space</p>
+<p>Add
+               Space</p>
+<p>Add&nbsp;Space</p>
+<p>Add&ensp;Space</p>
+<p>Add&emsp;Space</p>
+<p>Add&ensp;Space</p>
+
+<p><abbr title="Agape
+Renewal Center">
+ARC</abbr> </p>
+
+<details>
+<summary>Web Design
+     Class2017</summary>
+	 
+
+
+
+
+</body>
+-->
